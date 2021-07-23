@@ -1,0 +1,171 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container
+      a.navbar-brand(href='/') Node API
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='/') Home
+          li.nav-item
+            a.nav-link(href='https://github.com/ManiruzzamanAkash' target='_blank')
+              img(width='30' src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' alt='' style='margin-right: 10px')
+              | Github
+  .container.m-5.pl-5
+    p Advance Todo CRUD API with Node JS
+    p
+      b Technologies & Featuers:
+    ul
+      li MongoDB
+      li Mongoose
+      li Express
+      li Node JS
+      li MVC Pattern
+      li Validation
+    div
+    div
+      b API Postman Link: 
+      a(href='https://www.getpostman.com/collections/f96bafc60eb5fa7a7784' target='_blacnk')
+        | https://www.getpostman.com/collections/f96bafc60eb5fa7a7784
+    br
+    div
+      h3 Todo List: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos
+      p
+        | Method: 
+        code GET
+      div
+        | Response: 
+        br
+        pre.
+          [
+            {
+              "_id": "60fadbf0fb1e9926fb60c07d",
+              "title": "First todo",
+              "status": "Done"
+            },
+            {
+              "_id": "60fadfc796dbc5f55f4adbe0",
+              "title": "Another task",
+              "status": "Pending"
+            }
+          ]
+    div
+      h3 Todo Detail: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos/60fadbf0fb1e9926fb60c07d
+      p
+        | Method: 
+        code GET
+      div
+        | Response: 
+        br
+        pre.
+          {
+            "_id": "60fadbf0fb1e9926fb60c07d",
+            "title": "First todo",
+            "status": "Done"
+          }
+    div
+      h3 Todo Create: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos
+      p
+        | Method: 
+        code POST
+      div
+        | Body: 
+        br
+        pre.
+          {
+            "title": "Demo Todo 1",
+            "status": "Pending"
+          }
+      div
+        | Response: 
+        br
+        pre.
+          {
+            "_id": "60fb0e8bd8cd4f9cb52910a0",
+            "title": "Demo Todo 1",
+            "status": "Pending",
+            "createdAt": "2021-07-23T18:46:35.288Z",
+            "updatedAt": "2021-07-23T18:46:35.288Z",
+            "__v": 0
+          }
+    div
+      h3 Todo Update: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos/60fadbf0fb1e9926fb60c07d
+      p
+        | Method: 
+        code PUT
+      div
+        | Body: 
+        br
+        pre.
+          {
+            "title": "Demo Todo 1 Updated",
+            "status": "Done"
+          }
+      div
+        | Response: 
+        br
+        pre.
+          {
+            "message": "Todo has been updated successfully !",
+            "data": {
+              "_id": "60fadbf0fb1e9926fb60c07d",
+              "title": "Demo Todo 1 Updated",
+              "createdAt": "2021-07-23T17:54:04.823Z",
+              "updatedAt": "2021-07-23T18:54:12.279Z",
+              "__v": 0,
+              "status": "Done"
+            }
+          }
+    div
+      h3 Todo Delete: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos/60fadbf0fb1e9926fb60c07d
+      p
+        | Method: 
+        code DELETE
+      div
+        | Response: 
+        br
+        pre.
+          {
+            "message": "Todo has been deleted successfully !",
+            "data": {
+              "_id": "60fb139e55e09ca6e646e947",
+              "title": "Test Todo",
+              "status": "Done",
+              "createdAt": "2021-07-23T19:08:14.137Z",
+              "updatedAt": "2021-07-23T19:08:14.137Z",
+              "__v": 0
+            }
+          }
+    div
+      h3 Todo Delete All: 
+      p
+        | Endpoint: 
+        code http://localhost:3000/todos
+      p
+        | Method: 
+        code DELETE
+      div
+        | Response: 
+        br
+        pre.
+          {
+            "message": "7 Todos have been deleted successfully !"
+          }

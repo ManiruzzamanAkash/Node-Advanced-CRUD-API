@@ -1,0 +1,8 @@
+pre {
+    position: relative;
+    background: #eee;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: monospace;
+    color: blueviolet;
+}
