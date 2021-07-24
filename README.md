@@ -40,8 +40,22 @@ npm run dev
 <a href="https://www.getpostman.com/collections/f96bafc60eb5fa7a7784" target="_blacnk">https://www.getpostman.com/collections/f96bafc60eb5fa7a7784</a>
 
 
+#### Live Web API Demo Links at a glance
+1. Base URL - https://node-cruds-api.herokuapp.com/
+1. All Todos - https://node-cruds-api.herokuapp.com/todos
+1. Single Todos - https://node-cruds-api.herokuapp.com/todos/60fb121b55e09ca6e646e93e
+1. Post API - https://node-cruds-api.herokuapp.com/todos [Body dataset Read below]
+1. Put API - https://node-cruds-api.herokuapp.com/todos/60fb121b55e09ca6e646e93e [Body dataset Read below]
+1. Delete API - https://node-cruds-api.herokuapp.com/todos/60fb121b55e09ca6e646e93e [Body dataset Read below]
+1. Delete All API - https://node-cruds-api.herokuapp.com/todos [Body dataset Read below]
 
-<div><h3>Todo List: </h3><p>Endpoint: <code>http://localhost:3000/todos</code></p><p>Method: <code>GET</code></p>
+
+
+
+#### Todo List
+URL: http://localhost:3000/todos
+Method: `GET`
+
 <div>Response: <br>
 
 ```js
