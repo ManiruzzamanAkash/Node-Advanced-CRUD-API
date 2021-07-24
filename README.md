@@ -28,9 +28,9 @@ MONGODB_USERNAME=
 MONGODB_PASSWORD=
 ```
 
-#### Run Project
+#### Run Project with nodemon setup (Watch any changes)
 ```bash
-npm start
+npm run dev
 ```
 
 <br />
