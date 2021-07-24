@@ -10,7 +10,8 @@ An advanced CRUD API for Node JS implementing with MVC pattern and many more sta
 1. Express JS
 1. Node JS
 1. MVC (Model-View-Controller) Pattern
-1. Validation
+1. Schema Validation
+1. Form Validation
 
 ### How to Run:
 
