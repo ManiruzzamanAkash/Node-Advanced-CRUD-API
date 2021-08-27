@@ -37,7 +37,7 @@ npm run dev
 
 
 #### Postman API Link
-<a href="https://www.getpostman.com/collections/f96bafc60eb5fa7a7784" target="_blacnk">https://www.getpostman.com/collections/f96bafc60eb5fa7a7784</a>
+<a href="https://www.getpostman.com/collections/058c397fd09ae4cf3a9c" target="_blacnk">https://www.getpostman.com/collections/058c397fd09ae4cf3a9c</a>
 
 
 #### Live Web API Demo Links at a glance
